@@ -8,14 +8,12 @@ public class SnakeLadder {
         byte diceRoll;
 
         System.out.println("Starting Position of the Player = " + playerPosition);
-        /*
+
         //UC2=The Player rolls the die to get a number between 1 to 6.
         diceRoll = (byte) ((byte) (Math.random() * 6) + 1);
 
 
         System.out.println("Dice Number =" + " " + diceRoll);
-
-         */
 
     }
 
