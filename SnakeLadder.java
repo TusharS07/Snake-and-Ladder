@@ -3,6 +3,13 @@ package com.bridgelabz.snakeladder;
 public class SnakeLadder {
 
     public static void main(String[] args) {
+        System.out.println("***-Welcome to the Game of SNAKE & LADDER-***");
+        playGame();
+
+
+    }
+
+    static void playGame() {
         byte diceRoll;
         byte[] SnakeArray = {54, 90, 99};
         byte[] LadderArray = {9, 40, 67};
