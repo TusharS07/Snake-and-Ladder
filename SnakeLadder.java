@@ -68,6 +68,10 @@ public class SnakeLadder {
                 System.out.println("YOU GOT A LADDER.");
                 System.out.println("You are at " + playerPosition + " position.");
 
+            } else if (playerPosition > 100) {
+                playerPosition = playerPosition - diceRoll;
+
+                System.out.println("YOU CAN'T JUMP, YOU MUST LAND ON A 100.");
             }
         }
     }
