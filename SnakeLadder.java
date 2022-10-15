@@ -4,12 +4,12 @@ public class SnakeLadder {
 
     public static void main(String[] args) {
         byte diceRoll;
-        byte SnakeArray[] = {54, 90, 99};
-        byte LadderArray[] = {9, 40, 67};
+        byte[] SnakeArray = {54, 90, 99};
+        byte[] LadderArray = {9, 40, 67};
 
 
         System.out.println("Starting Position of the Player = 0");
-
+        System.out.println();
         for (int playerPosition = 1; playerPosition <= 100; playerPosition++) {
             diceRoll = (byte) ((byte) (Math.random() * 6));
 
@@ -19,6 +19,11 @@ public class SnakeLadder {
             playerPosition = playerPosition - 1;
 
             System.out.println("Current Position =" + " " + playerPosition);
+
+            if (playerPosition == 100) {
+                System.out.println();
+                System.out.println("CONGRATULATION!! YOU WON THE GAME.");
+            }
 
             if (diceRoll == 0) {
 
@@ -62,6 +67,7 @@ public class SnakeLadder {
 
                 System.out.println("YOU GOT A LADDER.");
                 System.out.println("You are at " + playerPosition + " position.");
+
             }
         }
     }
