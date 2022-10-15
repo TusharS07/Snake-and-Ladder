@@ -6,6 +6,7 @@ public class SnakeLadder {
         byte diceRoll;
         byte[] SnakeArray = {54, 90, 99};
         byte[] LadderArray = {9, 40, 67};
+        int totalNoOfDiceRoll = 0;
 
 
         System.out.println("Starting Position of the Player = 0");
@@ -19,6 +20,7 @@ public class SnakeLadder {
             playerPosition = playerPosition - 1;
 
             System.out.println("Current Position =" + " " + playerPosition);
+            totalNoOfDiceRoll++;
 
             if (playerPosition == 100) {
                 System.out.println();
@@ -74,6 +76,7 @@ public class SnakeLadder {
                 System.out.println("YOU CAN'T JUMP, YOU MUST LAND ON A 100.");
             }
         }
+        System.out.println("The Dice was rolled " +totalNoOfDiceRoll+ " Times to Win the Game ");
     }
 }
 
